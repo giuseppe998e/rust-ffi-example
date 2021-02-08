@@ -22,6 +22,7 @@ $ chmod +x example.out
 ```shell
 $ export LD_LIBRARY_PATH=.; ./example.out
 ```
+(Otherwise, the library can be loaded at runtime using the `dlfcn.h` library. This repository does not offer an example for this alternative.)
 
 ## Useful links
 1. [A little Rust with your C](https://rust-embedded.github.io/book/interoperability/rust-with-c.html)
