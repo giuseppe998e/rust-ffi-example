@@ -1,4 +1,3 @@
-# Example of how to link Rust dynlib to a C program
 ## Requirements
 1. **rust**
 2. **gcc**
