@@ -1,7 +1,4 @@
 # Rust library linked to a C program
-An example of how to create a dynamic library (.so) created with the Rust language and link it to a program written in C language.
-
----
 ## Requirements
 1. **rust**
 2. **gcc**
