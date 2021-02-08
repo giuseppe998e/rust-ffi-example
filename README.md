@@ -4,7 +4,7 @@
 3. **cbindgen**
 
 ## Compile
-#### Rust lib
+#### Rust library
 ```shell
 $ cd testlib
 $ cbindgen --crate testlib --output ../testlib.h --lang c
