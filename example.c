@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "testlib.h"
 
-int main() {
-  int x = 50,
-      y = 10,
+int main(int argc, char *argv[]) {
+  int x = 50, y = 10,
       rsum = rust_sum(x, y),
       rsub = rust_sub(x, y),
       rmul = rust_mul(x, y),
