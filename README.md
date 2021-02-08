@@ -23,7 +23,7 @@ $ chmod +x example.out
 $ export LD_LIBRARY_PATH=.; ./example.out
 ```
 
-# Useful links
+## Useful links
 1. [A little Rust with your C](https://rust-embedded.github.io/book/interoperability/rust-with-c.html)
 2. [Minimizing Rust Binary Size](https://github.com/johnthagen/min-sized-rust#minimizing-rust-binary-size)
 3. [CBindGen Quick Start](https://github.com/eqrion/cbindgen#quick-start)
