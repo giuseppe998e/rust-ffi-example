@@ -25,7 +25,7 @@ $ export LD_LIBRARY_PATH=.; ./example.out
 
 ## Useful links
 1. [FFI - Wikipedia](https://en.wikipedia.org/wiki/Foreign_function_interface)
-2. [FFI - Rust Docs](https://doc.rust-lang.org/nomicon/ffi.html)
+2. [FFI - Rustonomicon](https://doc.rust-lang.org/nomicon/ffi.html)
 2. [A little Rust with your C](https://rust-embedded.github.io/book/interoperability/rust-with-c.html)
 3. [Exposing FFI from the Rust library](https://svartalf.info/posts/2019-03-01-exposing-ffi-from-the-rust-library/)
 4. [Creating a shared and static library with gcc](https://renenyffenegger.ch/notes/development/languages/C-C-plus-plus/GCC/create-libraries/index)
