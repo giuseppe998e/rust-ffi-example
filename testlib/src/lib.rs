@@ -1,19 +1,21 @@
+use libc::c_int;
+
 #[no_mangle]
-pub extern "C" fn rust_sum(x: i32, y: i32) -> i32 {
+pub extern "C" fn rust_sum(x: c_int, y: c_int) -> c_int {
   x + y
 }
 
 #[no_mangle]
-pub extern "C" fn rust_sub(x: i32, y: i32) -> i32 {
+pub extern "C" fn rust_sub(x: c_int, y: c_int) -> c_int {
   x - y
 }
 
 #[no_mangle]
-pub extern "C" fn rust_mul(x: i32, y: i32) -> i32 {
+pub extern "C" fn rust_mul(x: c_int, y: c_int) -> c_int {
   x * y
 }
 
 #[no_mangle]
-pub extern "C" fn rust_div(x: i32, y: i32) -> i32 {
+pub extern "C" fn rust_div(x: c_int, y: c_int) -> c_int {
   x / y
 }
