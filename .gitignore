@@ -65,3 +65,6 @@ target/
 Cargo.lock
 
 # End of https://www.toptal.com/developers/gitignore/api/c,rust
+
+# cbindgen generated header file
+/testlib.h
