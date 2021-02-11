@@ -19,7 +19,7 @@ $ chmod +x example.out
 
 ## Execute
 ```shell
-$ export LD_LIBRARY_PATH=.; ./example.out
+$ LD_LIBRARY_PATH=. ./example.out
 ```
 (Otherwise, the library can be loaded at runtime using the `dlfcn.h` library. This repository does not offer an example for this alternative.)
 
