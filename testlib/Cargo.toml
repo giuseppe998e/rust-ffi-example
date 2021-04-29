@@ -5,7 +5,7 @@ authors = ["Giuseppe Eletto <peppe.eletto@gmail.com>"]
 edition = "2018"
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["cdylib", "staticlib"]
 
 [profile.release] # Optimized for code size (https://github.com/johnthagen/min-sized-rust)
 opt-level = 'z'

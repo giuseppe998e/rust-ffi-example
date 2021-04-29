@@ -1,27 +1,37 @@
 ## Requirements
-1. **rust**
+1. **rust** (with *cargo*)
 2. **gcc**
 3. **cbindgen**
 
-## Compile
-#### Rust library
+## Compile the Rust library
 ```shell
 $ cd testlib
-$ cbindgen --crate testlib --output ../testlib.h --lang c
 $ cargo build --release
+$ cbindgen --crate testlib --lang c --output ../testlib.h
+$ cp target/release/libtestlib.{so,a} ..
 ```
-#### C executable
+
+## Compile the C executable
+#### Using the dynamic lib
 ```shell
-$ cp testlib/target/release/libtestlib.so libtestlib.so
-$ gcc example.c -L. -ltestlib -o example.out
-$ chmod +x example.out
+$ gcc example.c -ltestlib -o example.out
+```
+#### Using the static lib
+```shell
+$ gcc example.c libtestlib.a -ldl -pthread -o example.out
 ```
 
 ## Execute
 ```shell
+$ chmod +x example.out
 $ LD_LIBRARY_PATH=. ./example.out
 ```
-(Otherwise, the library can be loaded at runtime using the `dlfcn.h` library. This repository does not offer an example for this alternative.)
+N.B. The environment variable `LD_LIBRARY_PATH` is only needed for the dynamic version of the library.
+
+---
+
+The Rust library could also be loaded at runtime using the `dlfcn.h` library.  
+This repository does not offer an example for this alternative.
 
 ## Useful links
 1. [FFI - Wikipedia](https://en.wikipedia.org/wiki/Foreign_function_interface)
