@@ -30,7 +30,7 @@ N.B. The environment variable `LD_LIBRARY_PATH` is only needed for the dynamic v
 
 ---
 
-The Rust library could also be loaded at runtime using the `dlfcn.h` library.  
+The Rust (dynamic) library could also be loaded at runtime using the `dlfcn.h` library.  
 This repository does not offer an example for this alternative.
 
 ## Useful links
