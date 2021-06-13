@@ -14,7 +14,7 @@ $ cp target/release/libtestlib.{so,a} ..
 ## Compile the C executable
 #### Using the dynamic lib
 ```shell
-$ gcc example.c -ltestlib -o example.out
+$ gcc example.c -L. -ltestlib -o example.out
 ```
 #### Using the static lib
 ```shell
